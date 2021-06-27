@@ -8,6 +8,7 @@ class Patients(models.Model):
     patient_last_name = models.CharField(max_length=255)
     birth_date = models.DateField(null=True)
     sex = models.CharField(max_length=10)
+    created_at = models.DateTimeField(auto_now_add=True)
 
 
 class Visit(models.Model):
