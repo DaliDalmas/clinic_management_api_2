@@ -9,15 +9,13 @@ class Patients(models.Model):
     birth_date = models.DateField(null=True)
     sex = models.CharField(max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
-    def __str__(self):
-        return self.patient_first_name
+    
 
 
 class Visit(models.Model):
-    patient = models.ForeignKey(Patients,related_name='patients_relation',on_delete=models.CASCADE)
+    patient = models.ForeignKey('Patients',on_delete=models.CASCADE)
     date = models.DateField(auto_now_add=True)
-    def __str__(self):
-        return self.date
+    
 
     
 

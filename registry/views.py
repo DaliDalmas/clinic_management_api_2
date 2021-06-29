@@ -27,7 +27,7 @@ class PatientsView(APIView):
 class VisitsView(APIView):
     def get(self,request):
         data = Visit.objects.all()
-        serializer = VisitsSerializer(data)
+        serializer = VisitsSerializer(data,many=True)
         return Response(serializer.data)
 
     def post(self,request):

@@ -8,9 +8,9 @@ class PatientsSerializer(ModelSerializer):
         fields = '__all__'
 
 class VisitsSerializer(ModelSerializer):
-    patient_id = PatientsSerializer(source='patients_relation')
+    patient_id = PatientsSerializer(source="patient")
     class Meta:
         model = Visit
-        fields = ('date','patient_id','id')
+        fields = ('date','id','patient_id')
 
    
