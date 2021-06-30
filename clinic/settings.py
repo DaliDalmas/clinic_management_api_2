@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'registry',
-    'user_management'
+    'user_management',
+    'drf_yasg',
 ]
 
 AUTH_USER_MODEL = 'user_management.CustomUser'
@@ -48,7 +49,7 @@ AUTH_USER_MODEL = 'user_management.CustomUser'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
+    ]
 }
 
 MIDDLEWARE = [

@@ -6,6 +6,8 @@ from .serializers import PatientsSerializer, VisitsSerializer, SymptomsSerialize
 from rest_framework.views import APIView
 from .models import Patients, Visit, Symptoms, Prescriptions
 from rest_framework.permissions import IsAuthenticated
+
+
 # Create your views here.
 
 class PatientsView(APIView):
