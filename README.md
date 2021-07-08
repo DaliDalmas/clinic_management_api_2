@@ -12,6 +12,7 @@ This is the second version of clinic management API. Here I implement user authe
 
 - Swagger view - <https://github.com/axnsan12/drf-yasg>
 - Relationships - <https://www.youtube.com/watch?v=NCBxyw6rDds&ab_channel=CodeEnvironment>
+- enabling cross origin header - <https://stackoverflow.com/questions/35760943/how-can-i-enable-cors-on-django-rest-framework>
 
 ## The look of the API in Swagger
 
